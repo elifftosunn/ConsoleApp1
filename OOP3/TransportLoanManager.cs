@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    class TransportLoanManager : ICreditManager //Taşıt Kredisi Yönetimi
+    class TransportLoanManager : ICreditManager 
     {
         public void BiseyYap()
         {
