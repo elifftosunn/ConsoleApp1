@@ -4,8 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    //interface == service
-    class DatabaseLoggerService : ILoggerService // bu class ILoggerService alternatifidir.
+    class DatabaseLoggerService : ILoggerService
     {
         public void Log()
         {
