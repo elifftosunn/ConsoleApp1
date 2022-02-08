@@ -4,15 +4,10 @@ using System.Text;
 
 namespace OOP2
 {
-    // İş sınıfları // business classes
-    class CustomerManager //Operasyon Classı
+    class CustomerManager 
     {
-        public void Add(Customer customer) //Customer sınıfından imza oluşturduk
+        public void Add(Customer customer) 
         {
-            //if (customer.)
-            //{
-
-            //}
         }
     }
 }
