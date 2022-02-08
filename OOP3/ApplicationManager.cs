@@ -6,7 +6,7 @@ namespace OOP3
 {
     class ApplicationManager 
     {
-        public void makeApplication(ICreditManager creditManager,List<ILoggerService> loggerServices) //burada tek bir kredi istiyor
+        public void makeApplication(ICreditManager creditManager,List<ILoggerService> loggerServices)
         {
             creditManager.Calculate();
             foreach (var loggerService in loggerServices) 
@@ -14,7 +14,7 @@ namespace OOP3
                 loggerService.Log(); 
             }
         }
-        public void creditPreNotification(List<ICreditManager> credits) //burada birden fazla kredi sunuyorsun 1 de olabilir 1000 de
+        public void creditPreNotification(List<ICreditManager> credits) 
         {
             foreach (var item in credits)
             {
