@@ -2,7 +2,7 @@
 
 namespace OOP3
 {
-    class FileLoggerService : ILoggerService // bu class ILoggerService alternatifidir.
+    class FileLoggerService : ILoggerService
     {
         public void Log()
         {
