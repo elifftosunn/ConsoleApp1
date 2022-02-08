@@ -18,7 +18,7 @@ namespace ValueAndReferenceTypes
             int[] numbers2 = new int[] { 100, 200, 300, 400, 500 };
             numbers1 = numbers2; //numbers1'in referansı artık numbers2'nin referansını gösteriyor.
             numbers2[0] = 999;
-            Console.WriteLine(numbers1[0]); //numbers1'in heap'teki yeri artık numbers2'nin bellekteki yeri olduğundan numbers2'nin degerlerini degistirdigimizde numbers1'in degerleri de degisecektir.
+            Console.WriteLine(numbers1[0]); //numbers1'in heap'teki yeri artık numbers2'nin heap'teki yeri olduğundan numbers2'nin degerlerini degistirdigimizde numbers1'in degerleri de degisecektir.
             Console.WriteLine(numbers1[0]+" "+numbers1[1]+" "+numbers1[2]);
         }
     }
