@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    class ArtisanLoanManager : ICreditManager //Esnaf Kredisi
+    class ArtisanLoanManager : ICreditManager 
     {
         public void BiseyYap()
         {
