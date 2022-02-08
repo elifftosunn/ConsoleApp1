@@ -7,9 +7,9 @@ namespace Methods
         static void Main(string[] args)
         {
             //DONT REPEAT YOURSELF (KENDİNİ TEKRAR ETME) - DRY - Clean Code - Best Practice
-            Product product1 = new Product() { Id=1,Name="Elma",Price="5",Explanation="Çok güzel meyva dermisim "};
-            Product product2 = new Product() { Id=1,Name="Armut",Price="10",Explanation="Armut kel mahmut "};
-            Product product3 = new Product() { Id=1,Name="Muz",Price="15",Explanation="Çok pahalı meyva "};
+            Product product1 = new Product() { Id=1,Name="Erik",Price="5",Explanation="Green Erik "};
+            Product product2 = new Product() { Id=1,Name="Armut",Price="10",Explanation="Small Armut "};
+            Product product3 = new Product() { Id=1,Name="Elma",Price="15",Explanation="Red Elma "};
 
             Product[] product = new Product[] { product1, product2, product3 };
             for (int i = 0; i < product.Length; i++)
