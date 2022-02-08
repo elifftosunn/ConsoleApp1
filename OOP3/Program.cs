@@ -7,32 +7,29 @@ namespace OOP3
     {
         static void Main(string[] args)
         {
-            //interface'ler de o interface'i implemente eden class'ın referans numarasını tutabiliyor.
+
             ICreditManager needCreditManager = new NeedCreditManager();
             ICreditManager transportLoanManager = new TransportLoanManager();
             ICreditManager housingLoanManager = new HousingLoanManager();
             ICreditManager artisanLoanManager = new ArtisanLoanManager();
 
-            ILoggerService databaseLoggerService = new DatabaseLoggerService(); //veritabanına logladık ///2.YOL
-            ILoggerService fileLoggerService = new FileLoggerService(); //dosyaya logladık
+            ILoggerService databaseLoggerService = new DatabaseLoggerService();
+            ILoggerService fileLoggerService = new FileLoggerService(); 
             ApplicationManager applicationManager = new ApplicationManager();
-            //applicationManager.makeApplication(needCreditManager, new DatabaseLoggerService());//veritabanına logladık
+            //applicationManager.makeApplication(needCreditManager, new DatabaseLoggerService());
 
 
-            List<ILoggerService> loggers = new List<ILoggerService> { new SmsLoggerService(), new FileLoggerService() }; //kendi log listemizi oluşturduk
+            List<ILoggerService> loggers = new List<ILoggerService> { new SmsLoggerService(), new FileLoggerService() }; 
 
-            applicationManager.makeApplication(needCreditManager,loggers);//dosyaya ve sms'e logladık(birden fazla loglama işlemi)
-            //applicationManager.makeApplication(artisanLoanManager, databaseLoggerService);//veritabanına logladık
-            //applicationManager.makeApplication(new ArtisanLoanManager(), new SmsLoggerService());//sms'e logladık
+            applicationManager.makeApplication(needCreditManager,loggers);
+            //applicationManager.makeApplication(artisanLoanManager, databaseLoggerService);
+            //applicationManager.makeApplication(new ArtisanLoanManager(), new SmsLoggerService());
 
            
             
             
             List<ICreditManager> credits = new List<ICreditManager> { needCreditManager, transportLoanManager, housingLoanManager };
-
-            //applicationManager.creditPreNotification(credits);//bankadaki görevli kredi ön bilgilendirmesi yapması için kredileri yolladı.
-
-
+            //applicationManager.creditPreNotification(credits);
         }
 
     }
