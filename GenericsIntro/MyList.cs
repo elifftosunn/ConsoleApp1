@@ -6,21 +6,21 @@ namespace GenericsIntro
 {
     class MyList<T> 
     {
-        T[] items; //T'nin tipi değişebilir
-        public MyList()  //constructor => class'ı new'lediğimiz zaman otomatik çalışır
+        T[] items; 
+        public MyList()
         {
             items = new T[0];
         }
-        public void Add(T item) //kullanıcı veri tipi olarak ne verirse onu alır
+        public void Add(T item) 
         {
-            T[] tempArray = items; //gecici dizinin items'in referansını tutuyor gecici olarak
-            items = new T[items.Length+1]; //dizinin eleman sayısı 1 arttı
+            T[] tempArray = items; 
+            items = new T[items.Length+1]; 
             //items=tempArray;
             for (int i = 0; i < tempArray.Length; i++)
             {
-                items[i] = tempArray[i]; //items emaneten verdiği elemanlarını geri alıyor
+                items[i] = tempArray[i]; 
             }
-            items[items.Length - 1] = item; //items'in son elemanına yeni elemanı ekledik
+            items[items.Length - 1] = item;
         }
         public int Length
         {
