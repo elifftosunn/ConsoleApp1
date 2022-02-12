@@ -18,7 +18,7 @@ namespace ConsoleApp1
             course3.CourseName = "React";
             course3.CourseTeacher = "Engin Demiroğ";
             course3.IzlenmeOranı = 80;
-            //Console.WriteLine(course1.CourseName + " " + course1.CourseTeacher + " " + course1.IzlenmeOranı);
+            
             Courses[] courses = new Courses[] { course1, course2, course3 };
             foreach (var item in courses)
             {
